@@ -1,9 +1,4 @@
-# It generates the docker image to run the java project
-# Before running this script you have to run the maven command: mvn clean package
-# To generate the docker image run: docker build -t <user>/<image_name> <path_to_this_file>
-
-
-FROM java:8
+FROM openjdk:11.0.16-jdk
 
 WORKDIR /app/java_project/
 
