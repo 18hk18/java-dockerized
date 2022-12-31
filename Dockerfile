@@ -2,8 +2,6 @@ FROM openjdk:11.0.16-jdk
 
 WORKDIR /app/java_project/
 
-RUN mvn clean package
-
 # Copy the jar
 COPY target/dockerized-0.0.1-SNAPSHOT.jar ./
 # Copy dependencies
